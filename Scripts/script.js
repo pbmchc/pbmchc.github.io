@@ -122,7 +122,7 @@ function showScroller() {
 function checkHover() {
     $('#ddmenu').removeClass('open');
     $("#ddmenu").hover(function () {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 1024) {
             $(this).toggleClass('open');
             document.getElementById('open-menu').removeAttribute('data-toggle');
         }
