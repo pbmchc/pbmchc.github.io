@@ -60,7 +60,9 @@ function hideNav() {
         $(".navbar-custom").fadeIn("fast");
     }
 }
-
+$(".back-btn").click(function () {
+    history.back();
+});
 // scroll function
 function scrollToID(id, speed) {
     var offSet = 50;
