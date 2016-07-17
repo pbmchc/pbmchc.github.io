@@ -79,7 +79,7 @@ body {
     bottom: 35%;
     opacity:0.4;
 }
-@media (max-width: 768px) {
+@media (max-width: 770px) {
 
     .navbar-custom .navbar-nav > li:last-of-type:after{
     content:none;
