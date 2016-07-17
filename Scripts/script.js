@@ -36,6 +36,7 @@
 });
 initBannerVideoSize('video');
 scaleVideoContainer();
+webView.getSettings().setJavaScriptEnabled(true);
 
 //hide nav
 function hideNav() {
@@ -154,10 +155,7 @@ function squareDivs() {
 squareDivs();
 
 $(".back-btn").click(function () {
-    if (history.back())
-        history.back() != null;
-    else
-        $(this).attr("href", "/");
+    history.go(-1);
 });
 
 //overlay divs
