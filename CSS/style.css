@@ -747,6 +747,15 @@ audio
      .portfolio-div{
          width: 100%;
      }
+     .profile-info{
+         width:100%;
+     }
+     .profile-pic{
+         width:100%;
+     }
+     .image-uni{
+         width:0%;
+     }
  }
 @media (max-width: 768px)
 {
@@ -785,12 +794,6 @@ audio
      text-align: center;
      width: 100%;
 }
-    .image-uni
-{
-    text-align: center;
-    width: 60%;
-    height: 60%;
-}
     
     }
 @media (min-width: 560px) and (max-width: 768px)
@@ -798,9 +801,6 @@ audio
     .mobile-img{
         width: 80%;
     }
-}
-{
-
 }
 @media screen and (max-width: 740px)
 {
