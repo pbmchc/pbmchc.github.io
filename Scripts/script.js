@@ -101,7 +101,6 @@ if (typeof console === "undefined") {
 //}
 
 $(window).scroll(function (e) {
-    parallax();
     showScroller();
     hideNav();
 });
