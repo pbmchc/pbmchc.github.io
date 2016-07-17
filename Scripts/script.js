@@ -46,7 +46,7 @@ function hideNav() {
 
     if (windowWidth < 768 && ratio < 1)
     {
-        if (scrolled > windowHeight + 70)
+        if (scrolled > windowHeight + 20)
         {
             $(".navbar-custom").fadeOut();
         }
