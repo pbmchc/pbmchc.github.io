@@ -36,7 +36,6 @@
 });
 initBannerVideoSize('video');
 scaleVideoContainer();
-webView.getSettings().setJavaScriptEnabled(true);
 
 //hide nav
 function hideNav() {
@@ -153,10 +152,6 @@ function squareDivs() {
     }
 }
 squareDivs();
-
-$(".back-btn").click(function () {
-    history.go(-1);
-});
 
 //overlay divs
 function showcontent(content) {
