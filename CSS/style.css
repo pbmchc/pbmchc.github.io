@@ -515,7 +515,7 @@ h6
     height: 90%;
 }
 .cv-list{
-    list-style: none;
+    list-style: square;
     margin-left:0;
     padding-left:0;
 }
@@ -642,6 +642,7 @@ audio
 .bkmarks li a{
     color: rgb(76,76,76);
     font-size: 1.2em;
+    background-color: rgb(245,245,245);
 }
 .nav-tabs{
     border-bottom: solid 1.5px rgb(229,229,229);
@@ -1017,4 +1018,7 @@ video{
 .p-about{
   text-align: justify;
   font-size:1.2em;
+}
+.language{
+    margin: 10px 0 3px 0;
 }
