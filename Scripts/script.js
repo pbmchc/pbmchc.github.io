@@ -154,7 +154,10 @@ function squareDivs() {
 squareDivs();
 
 $(".back-btn").click(function () {
-    history.back();
+    if (history.back())
+        history.back() != null;
+    else
+        $(this).attr("href", "/");
 });
 
 //overlay divs
