@@ -78,27 +78,27 @@ if (typeof console === "undefined") {
     };
 }
 //parallax effect
-var jumboHeight = $('.jumbotron').outerHeight();
-function parallax() {
-    var scrolled = $(window).scrollTop();
-    $('.bg').css('height', (jumboHeight - scrolled) + 'px');
-    if (scrolled > 100 && scrolled <= 200) {
-        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.25)');
-    }
-    else if (scrolled > 200 && scrolled <=300)
-    {
-        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.5)');
-    }
-    else if (scrolled > 300 && scrolled<=360) {
-        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.75)');
-    }
-    else if (scrolled > 360) {
-        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.95)');
-    }
-    else {
-        $('.jumbotron').css('background-color', 'transparent');
-    }
-}
+//var jumboHeight = $('.jumbotron').outerHeight();
+//function parallax() {
+//    var scrolled = $(window).scrollTop();
+//    $('.bg').css('height', (jumboHeight - scrolled) + 'px');
+//    if (scrolled > 100 && scrolled <= 200) {
+//        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.25)');
+//    }
+//    else if (scrolled > 200 && scrolled <=300)
+//    {
+//        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.5)');
+//    }
+//    else if (scrolled > 300 && scrolled<=360) {
+//        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.75)');
+//    }
+//    else if (scrolled > 360) {
+//        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.95)');
+//    }
+//    else {
+//        $('.jumbotron').css('background-color', 'transparent');
+//    }
+//}
 
 $(window).scroll(function (e) {
     parallax();
