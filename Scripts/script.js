@@ -31,6 +31,7 @@
              scaleVideoContainer();
              initBannerVideoSize('video');
              squareDivs();
+             typeWriter();
           
 
 });
@@ -218,4 +219,22 @@ function scaleBannerVideoSize(element) {
         $('video').addClass('fadeIn animated');
     });
 }
+//typewriter
+function typeWriter() {
+    var title = $("#title-text");
+    var text = "Hello World!";
+    var chars = text.split("");
+    text = "";
+    for (var i = 0; i < chars.length; i++) {
+        (function (index) {
+            var timeout = setTimeout(function () {
+                text += chars[index];
+                title.text(text);
+            }, 300 * (i + 1));
+        })(i);
+
+    }
+    clearTimeout(timeout);
+}
+
 

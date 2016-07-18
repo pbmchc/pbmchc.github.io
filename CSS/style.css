@@ -534,6 +534,27 @@ blockquote
 {
     text-align: justify;
 }
+#title-text{
+}
+.blinking:after{
+    border-left: 2.5px solid white;
+    position:absolute;
+    top:0;
+    bottom:10%;
+    content:"";
+    animation:blink 1s infinite step-end;
+}
+@keyframes blink{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+}
 .portfolio-img
 {
     width: 60%;
