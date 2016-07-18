@@ -112,6 +112,9 @@ checkHover();
 $('#ddmenu').blur(function () {
     $('#ddmenu').removeClass('open');
 });
+$('#ddmenu').focusout(function () {
+    $('#ddmenu').removeClass('open');
+});
 
 $(".dropdown-menu > li > a").click(function () {
     $('#ddmenu').removeClass('open');
