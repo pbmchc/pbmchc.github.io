@@ -112,9 +112,6 @@ checkHover();
 $('#ddmenu').blur(function () {
     $('#ddmenu').removeClass('open');
 });
-$('#ddmenu').change(function () {
-    $('#ddmenu').removeClass('open');
-});
 
 $(".dropdown-menu > li > a").click(function () {
     $('#ddmenu').removeClass('open');
