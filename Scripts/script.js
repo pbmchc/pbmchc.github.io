@@ -76,28 +76,6 @@ if (typeof console === "undefined") {
         log: function () { }
     };
 }
-//parallax effect
-//var jumboHeight = $('.jumbotron').outerHeight();
-//function parallax() {
-//    var scrolled = $(window).scrollTop();
-//    $('.bg').css('height', (jumboHeight - scrolled) + 'px');
-//    if (scrolled > 100 && scrolled <= 200) {
-//        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.25)');
-//    }
-//    else if (scrolled > 200 && scrolled <=300)
-//    {
-//        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.5)');
-//    }
-//    else if (scrolled > 300 && scrolled<=360) {
-//        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.75)');
-//    }
-//    else if (scrolled > 360) {
-//        $('.jumbotron').css('background-color', 'rgba(255, 255, 255, 0.95)');
-//    }
-//    else {
-//        $('.jumbotron').css('background-color', 'transparent');
-//    }
-//}
 
 $(window).scroll(function (e) {
     showScroller();
@@ -130,6 +108,11 @@ function checkHover() {
     });
 }
 checkHover();
+
+$('#ddmenu').blur(function () {
+
+    $('#ddmenu').removeClass('open');
+});
 
 $(".dropdown-menu > li > a").click(function () {
     $('#ddmenu').removeClass('open');
@@ -237,18 +220,3 @@ function scaleBannerVideoSize(element) {
     });
 }
 
-$(".form-horizontal").submit(function (e) {
-
-    var ref = $(this).find("required");
-
-    $(ref).each(function () {
-        if ($(this).val() == '') {
-            alert("Required field should not be blank.");
-
-            $(this).focus();
-
-            e.preventDefault();
-            return false;
-        }
-    }); return true;
-});
