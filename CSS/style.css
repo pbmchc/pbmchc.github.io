@@ -822,6 +822,9 @@ audio
     .feat-img{
     max-width: 120px;
 }
+    #partners{
+        margin-top: 40px;
+    }
     
     }
 @media (min-width: 560px) and (max-width: 768px)
