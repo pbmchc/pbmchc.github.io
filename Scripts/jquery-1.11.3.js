@@ -10357,7 +10357,7 @@ $("form").submit(function (e) {
 
     $(ref).each(function () {
         if ($(this).val() == '') {
-            alert("Required field should not be blank.");
+            alert("Please fill all the required fields");
 
             $(this).focus();
 
