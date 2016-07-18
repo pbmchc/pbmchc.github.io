@@ -112,7 +112,7 @@ checkHover();
 $('#ddmenu').blur(function () {
     $('#ddmenu').removeClass('open');
 });
-$('#ddmenu').focusout(function () {
+$('#ddmenu').change(function () {
     $('#ddmenu').removeClass('open');
 });
 
