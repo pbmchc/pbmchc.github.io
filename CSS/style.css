@@ -661,25 +661,26 @@ audio
     text-align: center;
 }
 .bkmarks li a{
-    color: rgb(76,76,76);
+    color: white;
     font-size: 1.2em;
-    background-color: rgb(245,245,245);
+    background-color: rgba(153,204,204,.9);
 }
 .nav-tabs{
     border-bottom: solid 1.5px rgb(229,229,229);
 }
 .nav-tabs > li.active > a
 {
-    border: 2px solid rgb(229,229,229);
+    border: 2px solid rgb(153,204,204);
     border-bottom: 2px solid transparent;
 }
 .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-    border: 2px solid rgb(229,229,229);
+    border: 2px solid rgb(143,204,204);
     border-bottom: 2px solid transparent;
 }
 .bkmarks li a:hover, .bkmarks li a:focus{
     background-color: rgba(153,204,204,.7);
     color: white;
+    border-bottom: 2px solid rgb(153,204,204);
 }
 /*Overlay*/
 #overlay {
