@@ -151,7 +151,7 @@ function showimagecontent(content) {
     var scrollTop = $(window).scrollTop();
     $('#overlay').fadeIn().css({ 'height': docHeight });
     $('.overlay-image-content').fadeIn().css({ 'top': scrollTop + 40 + 'px' });
-    $('.contentimage').attr('src', 'Images/' + content + '.png');
+    $('.contentimage').attr('src', 'Images/Graphics/' + content + '.png');
 }
 $('.shoverlay-image').click(function (event) {
     event.preventDefault();
