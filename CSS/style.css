@@ -782,6 +782,28 @@ audio
          width:50%;
      }
  }
+ @media (min-width: 569px) and (max-width: 736px)
+ {
+    .mobile-img{
+     text-align: center;
+     margin-top:10%;
+}
+ }
+ @media (max-width: 568px)
+ {
+   .mobile-desc{
+    width: 100%;
+    padding-top: 30px;
+}
+    .mobile-cont{
+     text-align: center;
+     width: 100%;
+}
+    .mobile-img{
+        margin-top:0;
+        width:80%;
+    }
+ }
 @media (max-width: 768px)
 {
     .bkmarks li a{
@@ -811,14 +833,6 @@ audio
     .overlay-content{
         font-size: 1em;
 }
-    .mobile-desc{
-    width: 100%;
-    padding-top: 30px;
-}
-    .mobile-cont{
-     text-align: center;
-     width: 100%;
-}
     .feat-img{
     max-width: 120px;
 }
@@ -827,12 +841,6 @@ audio
     }
     
     }
-@media (min-width: 560px) and (max-width: 768px)
-{
-    .mobile-img{
-        width: 80%;
-    }
-}
 @media screen and (max-width: 740px)
 {
     .bg, .jumbotron{
@@ -850,6 +858,12 @@ audio
     .navbar-brand{
         font-size: 1em;
         color:white;
+    }
+    #brand-image{
+        height:70%;
+    }
+    .mobile-platform{
+        width:60px;
     }
 }
 .image-holder{
