@@ -38,7 +38,7 @@
 initBannerVideoSize('video');
 scaleVideoContainer();
 $(window).load(function () {
-    $(".aller").hide();
+    $(".aller").fadeOut();
 });
 //hide nav
 function hideNav() {
