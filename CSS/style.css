@@ -996,8 +996,11 @@ video{
     }
     #contact{
         margin-top: 60px;
+    }   
+    .before-footer{
+        height:70px;
+        width:100%;
     }
-   
     }
 @media screen and (max-width: 740px)
 {
