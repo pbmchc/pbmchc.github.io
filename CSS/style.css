@@ -997,8 +997,11 @@ video{
         margin-top: 60px;
     }   
     .before-footer{
-        height:80px;
+        height:85px;
         width:100%;
+    }
+    .copyrights{
+        padding-bottom: 1.5%;
     }
     }
 @media screen and (max-width: 740px)
