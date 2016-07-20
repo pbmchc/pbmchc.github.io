@@ -236,5 +236,15 @@ function typeWriter() {
     }
     clearTimeout(timeout);
 }
-
+//bottom footer
+$("#portfolio-btn").click(function (e) {
+    e.preventDefault();
+    $(".portfolio-nav").slideDown();
+    $(".nav-down").slideUp();
+});
+$("#caret-bale").click(function (e) {
+    e.preventDefault();
+    $(".portfolio-nav").slideUp();
+    $(".nav-down").slideDown();
+});
 

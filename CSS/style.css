@@ -175,11 +175,24 @@ body {
 {
     display: inline-block;
     font-size: 1.1em;
-    padding-right: 20px;
+    padding: 0 10px;
 }
 .nav-down li a
 {
     color: #dbdbdb;
+}
+.portfolio-nav{
+    padding-left:0;
+    font-size:1.2em;
+    display:none;
+}
+.portfolio-nav li{
+    display: inline-block;
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+.portfolio-nav li a{
+    color:#dbdbdb;
 }
 #brand-image {
     height: 100%;
