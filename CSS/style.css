@@ -258,11 +258,10 @@ h6
 }
 .footer-con
 {
-    padding-top: 40px;
+    padding-top: 30px;
 }
 .copyrights{
     color: #dbdbdb;
-    margin-bottom: 1%;
 }
 .btn-custom
 {
@@ -865,6 +864,7 @@ video{
     margin: 10px 0 3px 0;
 }
 .social-media{
+    padding-top:5px;
 }
 .social-icon{
     padding: 0 5px;
@@ -1001,7 +1001,7 @@ video{
         width:100%;
     }
     .copyrights{
-        padding-bottom: 1.5%;
+        padding-bottom: 1%;
     }
     }
 @media screen and (max-width: 740px)
