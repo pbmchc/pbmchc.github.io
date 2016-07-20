@@ -37,7 +37,9 @@
 });
 initBannerVideoSize('video');
 scaleVideoContainer();
-
+$(window).load(function () {
+    $(".aller").hide();
+});
 //hide nav
 function hideNav() {
     var windowHeight = $(window).height();
@@ -247,4 +249,12 @@ $("#caret-bale").click(function (e) {
     $(".portfolio-nav").slideUp();
     $(".nav-down").slideDown();
 });
+
+////random
+//var i = Math.round(Math.random() * 1);
+//$.getJSON('Scripts/proverbs.json', function (jd) {
+//    //alert(jd[1].name);
+//});
+//var i = obji[i];
+//alert(i.name + i.tekst);
 
