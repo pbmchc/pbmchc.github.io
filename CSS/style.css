@@ -865,7 +865,6 @@ video{
     margin: 10px 0 3px 0;
 }
 .social-media{
-    padding: 1.5% 0 1% 0;
 }
 .social-icon{
     padding: 0 5px;
@@ -998,7 +997,7 @@ video{
         margin-top: 60px;
     }   
     .before-footer{
-        height:70px;
+        height:80px;
         width:100%;
     }
     }
