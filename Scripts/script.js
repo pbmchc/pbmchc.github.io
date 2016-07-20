@@ -195,11 +195,12 @@ $("#caret-bale").click(function (e) {
     $(".nav-down").slideDown();
 });
 
-////random
-//var i = Math.round(Math.random() * 1);
-//$.getJSON('Scripts/proverbs.json', function (jd) {
-//    //alert(jd[1].name);
-//});
-//var i = obji[i];
-//alert(i.name + i.tekst);
+//function generateQuote() {
 
+//    var i = Math.round(Math.random() * 2);
+//    $.getJSON('Scripts/proverbs.json', function (jd) {
+//        var record = jd[i];
+//        $("#quote").text(record.quote);
+//        $("#author").text(record.author);
+//    });
+//}
