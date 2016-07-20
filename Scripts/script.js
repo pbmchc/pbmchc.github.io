@@ -28,17 +28,8 @@
                  offset: 100
              });
              showScroller();
-             scaleVideoContainer();
-             initBannerVideoSize('video');
              squareDivs();
              typeWriter();
-          
-
-});
-initBannerVideoSize('video');
-scaleVideoContainer();
-$(window).load(function () {
-    $(".aller").fadeOut();
 });
 //hide nav
 function hideNav() {
@@ -173,53 +164,7 @@ $('.hdoverlay, #overlay').click(function () {
 
 window.onresize = function () {
     $('#ddmenu').removeClass('open');
-    scaleVideoContainer();
-    scaleBannerVideoSize('video');
     squareDivs();
-}
-//video scalling
-function scaleVideoContainer() {
-
-    var height = $(window).height()*0.65;
-    var height2 = $(window).height() * 0.4;
-    var unitHeight = parseInt(height) + 'px';
-    $('#video-overlay').css('height', unitHeight);
-    $('#video-desc').css('height', height2 + 'px');
-    $('.filter').css('height', unitHeight);
-}
-
-function initBannerVideoSize(element) {
-
-    $(element).each(function () {
-        $(this).data('height', $(this).height());
-        $(this).data('width', $(this).width());
-    });
-    scaleBannerVideoSize(element);
-}
-
-function scaleBannerVideoSize(element) {
-
-    var windowWidth = $(window).width(),
-        windowHeight = $(window).height(),
-        videoWidth,
-        videoHeight;
-
-    $(element).each(function () {
-        var videoAspectRatio = $(this).data('height') / $(this).data('width'),
-            windowAspectRatio = windowHeight / windowWidth;
-
-        if (videoAspectRatio > windowAspectRatio) {
-           videoWidth = windowWidth*1.2;
-           videoHeight = videoWidth * videoAspectRatio*1.2;
-           $(this).css({'margin-left': 0 });
-        } else {
-            videoHeight = windowHeight*1.2;
-            videoWidth = videoHeight / videoAspectRatio*1,2;
-            $(this).css({ 'margin-top': 0, 'margin-left': -(videoWidth - windowWidth) / 2 + 'px' });
-        }
-        $(this).width(videoWidth).height(videoHeight);
-        $('video').addClass('fadeIn animated');
-    });
 }
 //typewriter
 function typeWriter() {
