@@ -996,7 +996,9 @@ video{
     }
     #contact{
         margin-top: 50px;
-        margin-bottom:50px;
+    }
+    .final-footer{
+        margin-top:30px;
     }
     
     }
