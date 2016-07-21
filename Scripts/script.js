@@ -179,9 +179,9 @@ function typeWriter() {
                 title.text(text);
             }, 300 * (i + 1));
         })(i);
-        clearTimeout(timeout);
+
     }
-    ;
+    clearTimeout(timeout);
 }
 //bottom footer
 $("#portfolio-btn").click(function (e) {
