@@ -48,36 +48,38 @@
             <h2>Contact</h2>
             <hr />
             <div class="row">
-                <div class="col-lg-5 col-md-5 col-sm-6">
+                <div class="col-lg-5 col-md-5 col-sm-6 contact-links">
                     <h6>Find me on</h6>
                     <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget turpis vel lectus luctus efficitur sed eu diam. Etiam sed suscipit dolor. Nunc sit amet tortor quis tortor vulputate varius. Nullam dui lorem, aliquet nec finibus in, bibendum a augue</p>
                     <div class="media-div"><span class="fa fa-2x fa-github media-icon"></span><p class="media-desc">https://github.com/pbmchc</p></div>
                     <div class="media-div"><span class="fa fa-2x fa-youtube media-icon"></span><p class="media-desc">dwdwdwdwd</p></div>
                     <div class="media-div"><span class="fa fa-2x fa-facebook-official media-icon"></span><p class="media-desc">dwdwdwdwd</p></div>
                     <div class="media-div"><span class="fa fa-2x fa-twitter media-icon"></span><p class="media-desc">dwdwdwdwd</p></div>
-                    <div class="media-div"><span class="fa fa-2x fa-envelope media-icon"></span><p class="media-desc">dwdwdwdwd</p></div>
+                    <div class="media-div"><span class="fa fa-2x fa-envelope-o media-icon"></span><p class="media-desc">dwdwdwdwd</p></div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-1">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-1 form-div">
                     <h6>...or just send me a message</h6>
-                    <form action="mailto:peterpunk@wp.pl" method="post" class="form-horizontal" enctype="text/plain">
+                    <form action="https://docs.google.com/forms/d/1NFHk5QDKkw-nKC0Dz83oEPA4UiNjDVU6mFeBXb9GdJY/formResponse" name="cform" id="cform" class="form-horizontal" enctype="text/plain" target="g_iframe" onsubmit="submitted=true;">
                         <div class="form-group animated bounceIn">
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" id="user-name" placeholder="Name" required />
+                                <input type="text" class="form-control" id="entry.1494655388" name="entry.1494655388" placeholder="Name" required />
                             </div>
                             <div class="col-lg-10">
-                                <input type="email" class="form-control" id="user-mail" placeholder="E-mail adress" required />
+                                <input type="email" class="form-control" id="entry.2006989912" name="entry.2006989912" placeholder="E-mail adress" required />
                             </div>
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" id="user-topic" placeholder="Topic" required />
+                                <input type="text" class="form-control" id="entry.1424243820" name="entry.1424243820" placeholder="Topic" required />
                             </div>
                             <div class="col-lg-10">
-                                <textarea name="user-message" id="user-message" class="form-control" cols="20" rows="8" placeholder="Your message..." required></textarea>
+                                <textarea name="entry.2009472630" id="entry.2009472630" class="form-control" cols="20" rows="8" placeholder="Your message goes here..." required></textarea>
                                 <br />
                                 <button id="baton" type="submit" class="form-control btn btn-custom" style="height:40px;">SEND MESSAGE</button>
                             </div>
                         </div>
                     </form>
+                    <iframe name="g_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 </div>
+                <div id="submit-thanks" class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-1"><p id="submit-icon" class="fa fa-4x fa-envelope"></p><p id="submit-thumb" class="fa fa-3x fa-thumbs-o-up"></p><p id="submit-text">Thank you for your message!</p></div>
             </div>
         </div>
     </div>

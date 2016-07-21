@@ -193,6 +193,13 @@ $("#caret-bale").click(function (e) {
     $(".portfolio-nav").slideUp();
     $(".nav-down").slideDown();
 });
+//submit
+$("#cform").submit(function (e) {
+    var height = $(".form-div").height();
+    $(".form-div").hide();
+    $("#submit-thanks").height(height);
+    $("#submit-thanks").fadeIn("slow");
+});
 //function generateQuote() {
 
 //    var i = Math.round(Math.random() * 2);
