@@ -10365,4 +10365,8 @@ $("form").submit(function (e) {
             return false;
         }
     }); return true;
+    var height = $(".form-div").height();
+    $(".form-div").hide();
+    $("#submit-thanks").height(height);
+    $("#submit-thanks").fadeIn("slow");
 });
