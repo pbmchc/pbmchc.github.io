@@ -205,8 +205,7 @@ $("#cform").submit(function (e) {
        }
     });
     if (validation == true)
-    {
-        
+    {  
         var height = $(".form-div").height();
         $(".form-div").hide();
         $("#submit-thanks").height(height);
