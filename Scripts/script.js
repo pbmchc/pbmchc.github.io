@@ -195,7 +195,7 @@ $("#caret-bale").click(function (e) {
 });
 //validate and submit
 $("#cform").submit(function () {
-    var ref = $(this).find(["required"]);
+    var ref = $(this).find("[required]");
     var validation = true;
     $(ref).each(function () {
         if ($(this).val() == '') {
