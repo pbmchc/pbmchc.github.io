@@ -174,14 +174,14 @@ function typeWriter() {
     text = "";
     for (var i = 0; i < chars.length; i++) {
         (function (index) {
-            var timeout = setTimeout(function () {
+            timeout = setTimeout(function () {
                 text += chars[index];
                 title.text(text);
             }, 300 * (i + 1));
         })(i);
-
+        clearTimeout(timeout);
     }
-    clearTimeout(timeout);
+    ;
 }
 //bottom footer
 $("#portfolio-btn").click(function (e) {
