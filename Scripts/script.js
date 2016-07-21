@@ -171,6 +171,7 @@ function typeWriter() {
     var title = $("#title-text");
     var text = "Hello World!";
     var chars = text.split("");
+    var timeout;
     text = "";
     for (var i = 0; i < chars.length; i++) {
         (function (index) {
@@ -179,9 +180,7 @@ function typeWriter() {
                 title.text(text);
             }, 300 * (i + 1));
         })(i);
-
     }
-    clearTimeout(timeout);
 }
 //bottom footer
 $("#portfolio-btn").click(function (e) {
