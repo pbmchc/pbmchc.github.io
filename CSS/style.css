@@ -1070,9 +1070,6 @@ video{
         margin-top:0;
         width:80%;
     }
-             .before-footer{
-         height:10px;
-     }
  }
 @media screen and (max-width: 740px)
 {
@@ -1084,7 +1081,12 @@ video{
     #wrapper{
         margin-top: 420px;
     }
-
+}
+@media (max-width: 736px)
+{
+        .before-footer{
+         height:10px;
+     }
 }
 @media screen and (max-width: 240px)
 {
