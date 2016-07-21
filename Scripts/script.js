@@ -195,6 +195,10 @@ $("#caret-bale").click(function (e) {
     $(".nav-down").slideDown();
 });
 
+$(window).load(function () {
+    $(".loader").hide();
+});
+
 //function generateQuote() {
 
 //    var i = Math.round(Math.random() * 2);
