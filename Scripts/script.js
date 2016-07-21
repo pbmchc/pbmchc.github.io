@@ -194,7 +194,7 @@ $("#caret-bale").click(function (e) {
     $(".nav-down").slideDown();
 });
 //validate and submit
-$("#cform").submit(function () {
+$("#cform").submit(function (e) {
     var ref = $(this).find("[required]");
     var validation = true;
     $(ref).each(function () {
@@ -206,6 +206,7 @@ $("#cform").submit(function () {
     });
     if (validation == true)
     {
+        
         var height = $(".form-div").height();
         $(".form-div").hide();
         $("#submit-thanks").height(height);
