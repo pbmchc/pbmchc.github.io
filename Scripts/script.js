@@ -193,6 +193,29 @@ $("#caret-bale").click(function (e) {
     $(".portfolio-nav").slideUp();
     $(".nav-down").slideDown();
 });
+//validate and submit form
+function validate() {
+    $("#cform").submit(function (e) {
+
+        var ref = $(this).find("[required]");
+
+        $(ref).each(function () {
+            if ($(this).val() == '') {
+                alert("Please fill all the required fields");
+
+                $(this).focus();
+
+                e.preventDefault();
+                return false;
+            }
+        }); 
+        var height = $(".form-div").height();
+        $(".form-div").hide();
+        $("#submit-thanks").height(height);
+        $("#submit-thanks").fadeIn("slow");
+        return true;
+    });
+}
 //function generateQuote() {
 
 //    var i = Math.round(Math.random() * 2);
