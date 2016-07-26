@@ -1036,7 +1036,6 @@ video{
         padding: 2%;
         width: 90%;
         position: absolute;
-        top: 25%;
         left:5%;
         right:5%;
         cursor: default;
@@ -1121,7 +1120,6 @@ video{
         .overlay-image-content
     {
         width: 60%;
-        top: 25%;
         left:20%;
         right:20%;
     }
