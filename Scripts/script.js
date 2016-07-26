@@ -132,11 +132,13 @@ function changeOrientation() {
     var width = $(window).width();
     if (height < width && height < 500)
     {
+        $('.overlay-image-content').css({ 'top': scrollTop + 30 + 'px' });
         $('.overlay-image-content').css("height", "90%");
         $('.contentimage').css("width", "80%");
     }
     else
     {
+        $('.overlay-image-content').css({ 'top': scrollTop + 30 + 'px' });
         $('.overlay-image-content').css("height", "auto");
         $('.contentimage').css("width", "70%");
     }
@@ -175,11 +177,13 @@ function showimagecontent(content) {
     });
     if (height < width && height < 500)
     {
+        $('.overlay-image-content').css({ 'top': scrollTop + 30 + 'px' });
         $('.overlay-image-content').css("height", "90%");
         $('.contentimage').css("width", "80%");
     }
     else
     {
+        $('.overlay-image-content').css({ 'top': scrollTop + 30 + 'px' });
         $('.overlay-image-content').css("height", "auto");
         $('.contentimage').css("width", "70%");
     }
