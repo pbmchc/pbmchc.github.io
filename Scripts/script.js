@@ -198,7 +198,7 @@ $('.hdoverlay, #overlay').click(function () {
 window.onresize = function () {
     $('#ddmenu').removeClass('open');
     squareDivs();
-    checkOrientation();
+    changeOrientation();
 }
 //typewriter
 function typeWriter() {
