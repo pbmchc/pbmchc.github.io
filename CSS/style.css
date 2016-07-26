@@ -619,7 +619,7 @@ blockquote
         background: #fff;
         padding: 1%;
         width: 80%;
-        position: absolute;
+        position: fixed;
         left:10%;
         right:10%;
         cursor: default;
@@ -650,14 +650,10 @@ blockquote
     margin-bottom: 3%;
 }
 .hdoverlay{
-        cursor: pointer;
-        padding-bottom: 3%;
-        padding-right: 2%;
-        padding-left:3%;
-        border-radius: 4px;
-        float: right;
-        color:rgb(100,100,100);
-        z-index:1000;
+    position: fixed;
+    right:2%;
+    top: 3%;
+
 }
 .weblink{
     color:white;
