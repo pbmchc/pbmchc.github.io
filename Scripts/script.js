@@ -142,7 +142,7 @@ function closecontent(){
     $('#overlay').fadeOut();
     $('.overlay-content').fadeOut('fast');
     $('.overlay-image-content').fadeOut('fast');
-    $("html").css("overflow", "scroll");
+    $("html").css("overflow", "auto");
     $('#overlay').unbind('touchmove');
 }
 
