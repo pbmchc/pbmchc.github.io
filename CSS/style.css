@@ -660,6 +660,8 @@ blockquote
         float: right;
         color:rgb(100,100,100);
         z-index:1000;
+        height:20px;
+        width:20px;
 }
 .weblink{
     color:white;
