@@ -133,10 +133,12 @@ function changeOrientation() {
     if (height < width && height < 500)
     {
         $('.overlay-image-content').css("height", "90%");
+        $('.contentimage').css("width", "60%");
     }
     else
     {
         $('.overlay-image-content').css("height", "auto");
+        $('.contentimage').css("width", "80%");
     }
 }
 
@@ -171,13 +173,15 @@ function showimagecontent(content) {
     $('#overlay').bind('touchmove', function (e) {
         e.preventDefault()
     });
-    if (height < width && height <500)
+    if (height < width && height < 500)
     {
         $('.overlay-image-content').css("height", "90%");
+        $('.contentimage').css("width", "60%");
     }
     else
     {
         $('.overlay-image-content').css("height", "auto");
+        $('.contentimage').css("width", "80%");
     }
 }
 $('.shoverlay-image').click(function (event) {

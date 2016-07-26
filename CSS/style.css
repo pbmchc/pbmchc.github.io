@@ -635,8 +635,8 @@ blockquote
         background: #fff;
         padding: 1%;
         width: 40%;
-        left:25%;
-        right:25%;
+        left:30%;
+        right:30%;
         position: absolute;
         text-align: center;
         cursor: default;
@@ -648,9 +648,6 @@ blockquote
 .overlay-img{
     width:90%;
     margin-bottom: 3%;
-}
-.contentimage{
-    width: 70%;
 }
 .hdoverlay{
         cursor: pointer;
@@ -1036,7 +1033,7 @@ video{
     }
     .overlay-image-content{
         display: none;
-        padding: 1%;
+        padding: 2%;
         width: 90%;
         position: absolute;
         top: 25%;
@@ -1047,9 +1044,6 @@ video{
         border-radius: 4px;
         overflow: auto;
 }
-    .content-image{
-        width: 100%;
-    }
     .overlay-content{
         font-size: 1em;
 }
@@ -1120,5 +1114,15 @@ video{
 {
     .cv-img{
         display:none;
+    }
+}
+@media (max-width: 980px)
+{
+        .overlay-image-content
+    {
+        width: 60%;
+        top: 25%;
+        left:20%;
+        right:20%;
     }
 }
