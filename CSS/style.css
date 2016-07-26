@@ -1072,6 +1072,8 @@ video{
  {
    .mobile-desc{
     width: 100%;
+    padding-left:0;
+    padding-right:0;
 }
     .mobile-cont{
      text-align: center;
