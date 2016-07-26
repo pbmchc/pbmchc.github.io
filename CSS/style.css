@@ -457,6 +457,12 @@ h6
 .cv-img{
     width: 50px;
 }
+.resume-table{
+    display: flex;
+}
+.resume-img-holder{
+    align-self:center;
+}
 .inner{
     line-height: 50px;
     vertical-align: middle;
@@ -1099,5 +1105,11 @@ video{
     }
     .mobile-platform{
         width:60px;
+    }
+}
+@media (max-width: 384px)
+{
+    .cv-img{
+        display:none;
     }
 }
