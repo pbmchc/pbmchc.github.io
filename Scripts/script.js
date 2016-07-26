@@ -127,7 +127,9 @@ function squareDivs() {
 }
 squareDivs();
 
-function checkOrientation() {
+function changeOrientation() {
+    var height = $(window).height();
+    var width = $(window).width();
     if (height < width && height < 500)
     {
         $('.overlay-image-content').css("height", "90%");
@@ -136,8 +138,8 @@ function checkOrientation() {
     {
         $('.overlay-image-content').css("height", "auto");
     }
-
 }
+
 //overlay divs
 function showcontent(content) {
     var docHeight = $(document).height();
