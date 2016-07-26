@@ -1128,6 +1128,9 @@ video{
     .weblink{
         padding: 3%;
     }
+    .tech-desc{
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 240px)
