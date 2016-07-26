@@ -160,7 +160,7 @@ function showimagecontent(content) {
     $('#overlay').bind('touchmove', function (e) {
         e.preventDefault()
     });
-    if (height < width)
+    if (height < width && height < 300)
     {
         $('.overlay-image-content').css("height", "90%");
     }
