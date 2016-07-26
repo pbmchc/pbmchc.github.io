@@ -627,7 +627,7 @@ blockquote
         border-radius: 4px;
         font-size: 1.2em;
         -webkit-font-smoothing: subpixel-antialiased;
-        height: 80%;
+        height: 90%;
         overflow: auto;
 }
 .overlay-image-content{
