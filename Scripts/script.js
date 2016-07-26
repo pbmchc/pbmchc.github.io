@@ -135,22 +135,23 @@ function changeOrientation() {
     {
         $('.overlay-image-content').css("height", "90%");
         $('.contentimage').css("width", "55%");
-        $('.overlay-image-content').css({ 'top': scrollTop + 30 + 'px' });
+        $('.overlay-image-content').css({ 'top': scrollTop + height * 0.05 });
     }
     else
     {
         $('.overlay-image-content').css("height", "auto");
         $('.contentimage').css("width", "70%");
-        $('.overlay-image-content').css({ 'top': scrollTop + 30 + 'px' });
+        $('.overlay-image-content').css({ 'top': scrollTop + height*0.05 });
     }
 }
 
 //overlay divs
 function showcontent(content) {
     var docHeight = $(document).height();
+    var height = $(window).height();
     var scrollTop = $(window).scrollTop();
     $('#overlay').fadeIn().css({ 'height': docHeight });
-    $('.content' + content).fadeIn().css({ 'top': scrollTop + 30 + 'px' });
+    $('.content' + content).fadeIn().css({ 'top': scrollTop + height * 0.05 });
     $("html").css("overflow", "hidden");
     $('#overlay').bind('touchmove', function (e) {
         e.preventDefault()
@@ -170,7 +171,7 @@ function showimagecontent(content) {
     var docHeight = $(document).height();
     var scrollTop = $(window).scrollTop();
     $('#overlay').fadeIn().css({ 'height': docHeight });
-    $('.overlay-image-content').fadeIn().css({ 'top': scrollTop + 30 + 'px' });
+    $('.overlay-image-content').fadeIn().css({ 'top': scrollTop + height * 0.05 });
     $('.contentimage').attr('src', 'Images/Graphics/' + content + '.png');
     $("html").css("overflow", "hidden");
     $('#overlay').bind('touchmove', function (e) {
