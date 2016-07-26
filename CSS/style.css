@@ -929,6 +929,9 @@ video{
    animation-delay: 1.4s;
 
 }
+.tech-img{
+    width: 100px;
+}
 @keyframes appear{
     from {opacity:0;}
     to {opacity:1;}
@@ -1051,6 +1054,9 @@ video{
    #submit-thanks{
        width:100%;
    }
+    .temp-info {
+        top: 52%;
+    }
 }
 @media screen and (max-width: 740px)
 {
@@ -1069,11 +1075,11 @@ video{
          height:10px;
      }
 }
- @media (min-width: 569px) and (max-width: 736px)
- {
-    .mobile-img{
-     text-align: center;
-     margin-top:10%;
+@media (min-width: 569px) and (max-width: 736px) {
+    .mobile-img {
+        text-align: center;
+        margin-top: 10%;
+    }
 }
     @media (max-width: 568px)
  {
@@ -1090,7 +1096,6 @@ video{
         margin-top:0;
         width:80%;
     }
- }
  }
  @media (max-width:480px)
  {
@@ -1136,5 +1141,11 @@ video{
     }
     .mobile-platform{
         width:60px;
+    }
+    .tech-img{
+    width: 60px;
+}
+    .tech-desc{
+        font-size: 1.0em;
     }
 }
