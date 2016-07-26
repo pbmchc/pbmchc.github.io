@@ -148,7 +148,7 @@ function changeOrientation() {
 //overlay divs
 function showcontent(content) {
     var docHeight = $(document).height();
-    
+    var scrollTop = $(window).scrollTop();
     $('#overlay').fadeIn().css({ 'height': docHeight });
     $('.content' + content).fadeIn().css({ 'top': scrollTop + 30 + 'px' });
     $("html").css("overflow", "hidden");
