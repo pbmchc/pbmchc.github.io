@@ -619,7 +619,7 @@ blockquote
         background: #fff;
         padding: 1%;
         width: 80%;
-        position: fixed;
+        position: absolute;
         left:10%;
         right:10%;
         cursor: default;
@@ -628,7 +628,11 @@ blockquote
         font-size: 1.2em;
         -webkit-font-smoothing: subpixel-antialiased;
         height: 90%;
-        overflow: auto;
+}
+.hdinside{
+    height:90%;
+    overflow: auto;
+    width: 100%;
 }
 .overlay-image-content{
         display: none;
@@ -650,10 +654,14 @@ blockquote
     margin-bottom: 3%;
 }
 .hdoverlay{
-    position: fixed;
-    right:2%;
-    top: 3%;
-
+        cursor: pointer;
+        padding-bottom: %;
+        padding-right: 2%;
+        padding-left:3%;
+        border-radius: 4px;
+        float: right;
+        color:rgb(100,100,100);
+        z-index:1000;
 }
 .weblink{
     color:white;
