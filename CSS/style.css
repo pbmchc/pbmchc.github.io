@@ -627,6 +627,8 @@ blockquote
         border-radius: 4px;
         font-size: 1.2em;
         -webkit-font-smoothing: subpixel-antialiased;
+        height: 80%;
+        overflow: auto;
 }
 .overlay-image-content{
         display: none;
@@ -779,6 +781,9 @@ blockquote
 }
 .media-icon{
     width:25px;
+}
+#blog{
+    opacity:0.6;
 }
 #contact{
     padding-top:6%;

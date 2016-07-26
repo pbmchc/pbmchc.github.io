@@ -40,7 +40,7 @@ function hideNav() {
 
     if (windowWidth < 768 && ratio < 1)
     {
-        if (scrolled > windowHeight + 70)
+        if (scrolled > windowHeight + 100)
         {
             $(".navbar-custom").fadeOut();
         }
@@ -106,10 +106,10 @@ checkHover();
 $('#ddmenu').blur(function () {
     $('#ddmenu').removeClass('open');
 });
-
 $(".dropdown-menu > li > a").click(function () {
     $('#ddmenu').removeClass('open');
 });
+
 $('#ddmenu').removeClass('open');
 function squareDivs() {
     var width = $(".square").width();
@@ -132,12 +132,14 @@ function showcontent(content) {
     var docHeight = $(document).height();
     var scrollTop = $(window).scrollTop();
     $('#overlay').fadeIn().css({ 'height': docHeight });
-    $('.content'+content).fadeIn().css({ 'top': scrollTop + 40 + 'px' });
+    $('.content' + content).fadeIn().css({ 'top': scrollTop + 40 + 'px' });
+    $("html").css("overflow", "hidden");
 }
 function closecontent(){
     $('#overlay').fadeOut();
     $('.overlay-content').fadeOut('fast');
     $('.overlay-image-content').fadeOut('fast');
+    $("html").css("overflow", "scroll");
 }
 
 function showimagecontent(content) {
@@ -146,6 +148,7 @@ function showimagecontent(content) {
     $('#overlay').fadeIn().css({ 'height': docHeight });
     $('.overlay-image-content').fadeIn().css({ 'top': scrollTop + 40 + 'px' });
     $('.contentimage').attr('src', 'Images/Graphics/' + content + '.png');
+    $("html").css("overflow", "hidden");
 }
 $('.shoverlay-image').click(function (event) {
     event.preventDefault();
