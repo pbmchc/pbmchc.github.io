@@ -1037,7 +1037,8 @@ video{
     .overlay-image-content{
         display: none;
         padding: 1%;
-        width: 90%;
+        width: 85%;
+        height: 90%;
         position: absolute;
         top: 25%;
         left:5%;
@@ -1045,6 +1046,7 @@ video{
         cursor: default;
         z-index: 10001;
         border-radius: 4px;
+        overflow: auto;
 }
     .content-image{
         width: 100%;
