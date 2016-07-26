@@ -956,7 +956,13 @@ video{
             margin-bottom:5%;
         }
 }
-@media (min-width: 980px)
+@media (min-width: 992px)
+{
+    .overlay-content{
+        height:auto;
+    }
+}
+@media (min-width: 1024px)
 {
     .web-portfolio-head::after{
         bottom: 85%;
