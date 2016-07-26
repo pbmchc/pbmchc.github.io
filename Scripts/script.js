@@ -128,12 +128,9 @@ function squareDivs() {
 squareDivs();
 
 function checkOrientation() {
-    var orientation = window.orientation;
-    alert(orientation);
-    if (Math.abs(orientation) === 90)
+    if (height < width && height < 500)
     {
         $('.overlay-image-content').css("height", "90%");
-        alert("zmiana");
     }
     else
     {
@@ -141,9 +138,6 @@ function checkOrientation() {
     }
 
 }
-window.onorientationchange(function () {
-    checkOrientation();
-});
 //overlay divs
 function showcontent(content) {
     var docHeight = $(document).height();
@@ -202,6 +196,7 @@ $('.hdoverlay, #overlay').click(function () {
 window.onresize = function () {
     $('#ddmenu').removeClass('open');
     squareDivs();
+    checkOrientation();
 }
 //typewriter
 function typeWriter() {
