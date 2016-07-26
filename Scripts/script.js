@@ -134,7 +134,6 @@ function showcontent(content) {
     $('#overlay').fadeIn().css({ 'height': docHeight });
     $('.content' + content).fadeIn().css({ 'top': scrollTop + 30 + 'px' });
     $("html").css("overflow", "hidden");
-    $("#overlay").css("overflow-y", "scroll");
     $('#overlay').bind('touchmove', function (e) {
         e.preventDefault()
     });
@@ -156,7 +155,6 @@ function showimagecontent(content) {
     $('.overlay-image-content').fadeIn().css({ 'top': scrollTop + 30 + 'px' });
     $('.contentimage').attr('src', 'Images/Graphics/' + content + '.png');
     $("html").css("overflow", "hidden");
-    $("#overlay").css("overflow-y", "scroll");
     $('#overlay').bind('touchmove', function (e) {
         e.preventDefault()
     });
