@@ -133,7 +133,7 @@ function changeOrientation() {
     if (height < width && height < 500)
     {
         $('.overlay-image-content').css("height", "90%");
-        $('.contentimage').css("width", "80%");
+        $('.contentimage').css("width", "55%");
         //$('.overlay-image-content').css({ 'top': scrollTop + 30 + 'px' });
     }
     else
@@ -178,7 +178,7 @@ function showimagecontent(content) {
     if (height < width && height < 500)
     {
         $('.overlay-image-content').css("height", "90%");
-        $('.contentimage').css("width", "80%");
+        $('.contentimage').css("width", "55%");
     }
     else
     {
