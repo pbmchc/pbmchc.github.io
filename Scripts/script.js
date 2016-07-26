@@ -130,6 +130,7 @@ squareDivs();
 function changeOrientation() {
     var height = $(window).height();
     var width = $(window).width();
+    var scrollTop = $(window).scrollTop();
     if (height < width && height < 500)
     {
         $('.overlay-image-content').css("height", "90%");
@@ -147,7 +148,7 @@ function changeOrientation() {
 //overlay divs
 function showcontent(content) {
     var docHeight = $(document).height();
-    var scrollTop = $(window).scrollTop();
+    
     $('#overlay').fadeIn().css({ 'height': docHeight });
     $('.content' + content).fadeIn().css({ 'top': scrollTop + 30 + 'px' });
     $("html").css("overflow", "hidden");
