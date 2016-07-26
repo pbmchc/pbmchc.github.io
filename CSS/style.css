@@ -952,6 +952,9 @@ video{
         left:20%;
         right:20%;
     }
+        .overlay-img{
+            margin-bottom:5%;
+        }
 }
 @media (min-width: 980px)
 {
