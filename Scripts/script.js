@@ -148,6 +148,8 @@ function closecontent(){
 }
 
 function showimagecontent(content) {
+    var height = $(window).height();
+    var width = $(window).width();
     var docHeight = $(document).height();
     var scrollTop = $(window).scrollTop();
     $('#overlay').fadeIn().css({ 'height': docHeight });
@@ -158,6 +160,14 @@ function showimagecontent(content) {
     $('#overlay').bind('touchmove', function (e) {
         e.preventDefault()
     });
+    if (height < width)
+    {
+        $('.overlay-image-content').css("height", "90%");
+    }
+    else
+    {
+        $('.overlay-image-content').css("height", "auto");
+    }
 }
 $('.shoverlay-image').click(function (event) {
     event.preventDefault();
