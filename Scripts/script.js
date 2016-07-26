@@ -134,7 +134,7 @@ function showcontent(content) {
     $('#overlay').fadeIn().css({ 'height': docHeight });
     $('.content' + content).fadeIn().css({ 'top': scrollTop + 40 + 'px' });
     $("html").css("overflow", "hidden");
-    $('body').bind('touchmove', function (e) {
+    $('#overlay').bind('touchmove', function (e) {
         e.preventDefault()
     });
 }
@@ -143,7 +143,7 @@ function closecontent(){
     $('.overlay-content').fadeOut('fast');
     $('.overlay-image-content').fadeOut('fast');
     $("html").css("overflow", "scroll");
-    $('body').unbind('touchmove');
+    $('#overlay').unbind('touchmove');
 }
 
 function showimagecontent(content) {
@@ -153,7 +153,7 @@ function showimagecontent(content) {
     $('.overlay-image-content').fadeIn().css({ 'top': scrollTop + 40 + 'px' });
     $('.contentimage').attr('src', 'Images/Graphics/' + content + '.png');
     $("html").css("overflow", "hidden");
-    $('body').bind('touchmove', function (e) {
+    $('#overlay').bind('touchmove', function (e) {
         e.preventDefault()
     });
 }
