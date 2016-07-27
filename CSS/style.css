@@ -670,10 +670,12 @@ blockquote
     display:block;
     text-align: center;
     margin: 3% 0;
+    text-decoration: underline;
 }
 .weblink:hover, .weblink:focus{
     color: white;
     text-decoration: none;
+
 }
 .offlink{
     background-color: rgb(229,229,229);
