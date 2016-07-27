@@ -236,6 +236,7 @@ $("#caret-bale").click(function (e) {
 });
 //validate and submit
 $("#cform").submit(function (e) {
+    submitted = true;
     var ref = $(this).find("[required]");
     var validation = true;
     $(ref).each(function () {
@@ -251,6 +252,12 @@ $("#cform").submit(function (e) {
         $(".form-div").hide();
         $("#submit-thanks").height(height);
         $("#submit-thanks").fadeIn("slow");
+    }
+});
+$("#hidden_iframe").load(function () {
+    if (submitted === true)
+    {
+        $(this).attr("src", "");
     }
 });
 //function generateQuote() {
