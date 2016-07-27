@@ -236,6 +236,7 @@ $("#caret-bale").click(function (e) {
 });
 //validate and submit
 $("#cform").submit(function (e) {
+    var submitted = true;
     var ref = $(this).find("[required]");
     var validation = true;
     $(ref).each(function () {
