@@ -144,7 +144,7 @@ function changeOrientation() {
 
 }
 
-$(window).load(loading);
+loading();
 
 function loading()
 {
