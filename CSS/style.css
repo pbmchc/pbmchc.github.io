@@ -952,6 +952,60 @@ video{
         opacity:0;
     }
 }
+.loader{
+    width:100%;
+    position: fixed;
+    background: white;
+    top:0;
+    left:0;
+    z-index: 10002;
+
+}
+.loaderWrapper
+{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transform: translate(-50%);
+    left: 50%;
+    top: 40%;
+    position:absolute;  
+    background-color: transparent;
+    animation: loading 0.9s ease-in-out infinite;
+}
+.letter{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-70%, 35%);
+    left: 50%;
+    top: 40%;
+    z-index: 100;  
+}
+.loaderWrapper:after
+{
+    content:"";
+    position: absolute;
+    display: block;
+    background-color: rgb(153,204,204);
+    width:10px;
+    height:10px;
+    bottom: 5px;
+    left:8px;
+    border-radius: 50%;
+}
+@keyframes loading{
+    0%{
+        transform: rotate(0deg) translate(-50%);
+    }
+    100%{
+        transform: rotate(360deg) translate(-50%);
+        transform-origin: 0% 80%;
+     }
+}
+
+
 /*media queries*/
 @media (max-width: 1024px)
 {

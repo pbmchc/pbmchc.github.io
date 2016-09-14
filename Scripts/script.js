@@ -144,6 +144,18 @@ function changeOrientation() {
 
 }
 
+$(window).ready(loading);
+
+function loading()
+{
+    var winHeight = $(window).height();
+    var loader = $('.loader');
+    loader.css('height', winHeight);
+    var loadHide = function () {
+        loader.fadeOut();
+    }
+    setTimeout(loadHide, 500);  
+}
 //overlay divs
 function showcontent(content) {
     var docHeight = $(document).height();
