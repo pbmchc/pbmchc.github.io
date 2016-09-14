@@ -972,7 +972,7 @@ video{
     top: 40%;
     position:absolute;  
     background-color: transparent;
-    animation: loading 0.9s ease-in-out infinite;
+    animation: loading 1s ease-in-out infinite;
 }
 .letter{
     height: 60px;
