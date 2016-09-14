@@ -29,7 +29,6 @@
              });
              showScroller();
              squareDivs();
-             typeWriter();
 });
 //hide nav
 function hideNav() {
@@ -150,6 +149,7 @@ $(window).load(function () {
         loader.fadeOut();
     }
     setTimeout(loadHide, 700);
+    setTimeout(typeWriter, 800);
 });
 //overlay divs
 function showcontent(content) {
