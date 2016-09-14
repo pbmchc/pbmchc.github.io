@@ -149,7 +149,7 @@ $(window).load(function () {
     var loadHide = function () {
         loader.fadeOut();
     }
-    setTimeout(loadHide, 750);
+    setTimeout(loadHide, 700);
 });
 //overlay divs
 function showcontent(content) {
