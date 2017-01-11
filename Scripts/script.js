@@ -268,8 +268,8 @@ $("#cform").submit(function (e) {
 
 function showFormAgain() {
     clearForm();
-    $("#submit-thanks").fadeOut(100);
-    $(".form-div").show("slow");
+    $("#submit-thanks").hide();
+    $(".form-div").show();
     $("#hidden_iframe").remove();
 }
 
