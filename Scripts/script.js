@@ -241,9 +241,12 @@ $("#caret-bale").click(function (e) {
     $(".portfolio-nav").slideUp();
     $(".nav-down").slideDown();
 });
+var submitted
 //validate and submit
 $("#cform").submit(function (e) {
     submitted = true;
+    $(".form-div").append('<iframe name="g_iframe" id="hidden_iframe" style="display:none;"></iframe>');
+
     var ref = $(this).find("[required]");
     var validation = true;
     $(ref).each(function () {
@@ -259,14 +262,27 @@ $("#cform").submit(function (e) {
         $(".form-div").hide();
         $("#submit-thanks").height(height);
         $("#submit-thanks").fadeIn("slow");
+        setTimeout(showFormAgain, 4000);
     }
 });
-$("#hidden_iframe").load(function () {
-    if (submitted === true)
-    {
-        $(this).attr("src", "");
-    }
-});
+
+function showFormAgain() {
+    clearForm();
+    $("#submit-thanks").fadeOut(100);
+    $(".form-div").show("slow");
+    $("#hidden_iframe").remove();
+}
+
+function clearForm() {
+    var inputs = $("#cform").find("input");
+    var textarea = $("#cform").find("textarea");
+
+    inputs.each(function () {
+        $(this).val("");
+    });
+    textarea.val("");
+}
+
 //function generateQuote() {
 
 //    var i = Math.round(Math.random() * 2);
