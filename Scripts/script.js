@@ -110,16 +110,14 @@ $(".dropdown-menu > li > a").click(function () {
 });
 
 $('#ddmenu').removeClass('open');
+
 function squareDivs() {
     var width = $(".square").width();
     var width2 = $(".square2").width();
-    if (width === 0)
-    {
+    if (width === 0) {
         $(".square").css("height", width2);
         $(".square2").css("height", width2);
-    }
-    else
-    {
+    } else {
         $(".square").css("height", width);
         $(".square2").css("height", width);
     }
@@ -151,6 +149,7 @@ $(window).load(function () {
     setTimeout(loadHide, 700);
     setTimeout(typeWriter, 800);
 });
+
 //overlay divs
 function showcontent(content) {
     var docHeight = $(document).height();
@@ -159,8 +158,8 @@ function showcontent(content) {
     $('#overlay').fadeIn().css({ 'height': docHeight });
     $('.content' + content).fadeIn().css({ 'top': scrollTop + height * 0.05 });
     $("html").css("overflow", "hidden");
-    $('#overlay').bind('touchmove', function (e) {
-        e.preventDefault()
+    $('#overlay').bind('touchmove', function (event) {
+        event.preventDefault()
     });
 }
 function closecontent(){
@@ -176,6 +175,7 @@ function showimagecontent(content) {
     var width = $(window).width();
     var docHeight = $(document).height();
     var scrollTop = $(window).scrollTop();
+
     $('#overlay').fadeIn().css({ 'height': docHeight });
     $('.overlay-image-content').fadeIn().css({ 'top': scrollTop + height * 0.05 });
     $('.contentimage').attr('src', 'Images/Graphics/' + content + '.png');
@@ -183,13 +183,11 @@ function showimagecontent(content) {
     $('#overlay').bind('touchmove', function (e) {
         e.preventDefault()
     });
-    if (height < width && height < 500)
-    {
+
+    if (height < width && height < 500) {
         $('.overlay-image-content').css("height", "90%");
         $('.contentimage').css("width", "55%");
-    }
-    else
-    {
+    } else {
         $('.overlay-image-content').css("height", "auto");
         $('.contentimage').css("width", "70%");
     }
@@ -214,6 +212,7 @@ window.onresize = function () {
     squareDivs();
     changeOrientation();
 }
+
 //typewriter
 function typeWriter() {
     var title = $("#title-text");
@@ -230,18 +229,21 @@ function typeWriter() {
         })(i);
     }
 }
+
 //bottom footer
 $("#portfolio-btn").click(function (e) {
     e.preventDefault();
     $(".portfolio-nav").slideDown();
     $(".nav-down").slideUp();
 });
+
 $("#caret-bale").click(function (e) {
     e.preventDefault();
     $(".portfolio-nav").slideUp();
     $(".nav-down").slideDown();
 });
-var submitted
+
+var submitted;
 //validate and submit
 $("#cform").submit(function (e) {
     submitted = true;
@@ -256,9 +258,9 @@ $("#cform").submit(function (e) {
             e.preventDefault();
        }
     });
-    if (validation == true)
-    {  
+    if (validation) {  
         var height = $(".form-div").height();
+
         $(".form-div").hide();
         $("#submit-thanks").height(height);
         $("#submit-thanks").fadeIn("slow");
@@ -282,13 +284,3 @@ function clearForm() {
     });
     textarea.val("");
 }
-
-//function generateQuote() {
-
-//    var i = Math.round(Math.random() * 2);
-//    $.getJSON('Scripts/proverbs.json', function (jd) {
-//        var record = jd[i];
-//        $("#quote").text(record.quote);
-//        $("#author").text(record.author);
-//    });
-//}
